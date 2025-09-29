@@ -1,9 +1,9 @@
 *{
+  flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
-
 
 .card {
   max-width: 18rem;
@@ -20,5 +20,5 @@
 }
 .card-img-top:hover{
   transform: rotateY(360deg);
-  transition: 1s;
+  transition: 2s;
 }
