@@ -22,3 +22,64 @@
   transform: rotateY(360deg);
   transition: 2s;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form-control {
+  width: 400px;
+  background-color: gray;
+  padding: 30px;
+  margin: auto;
+  margin-top: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+
+.form-control h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  background-color: lightgray;
+  padding: 10px;
+  border-radius: 15px ;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+.form-control p {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+}
+
+.form-control a {
+  color: white;
+  text-decoration: none;
+}
+
+.form-control a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+.form-btn {
+  width: 100%;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 15px;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 15px;
+}
+
+.form-btn:hover {
+  background-color: black;
+}
