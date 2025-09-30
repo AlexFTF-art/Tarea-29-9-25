@@ -17,13 +17,35 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contenedor-logo {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  padding: 2px;
+  border-radius: 80px;
+  transition: transform 0,5s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08) rotate(3deg);
 }
 
 .navegador-lista {
   list-style: none;
+  flex: 2;
   display: flex;
-  justify-content: center;
-  gap: 32px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navegador-enlace {
@@ -40,12 +62,12 @@ body {
   content: "";
   position: absolute;
   bottom: -6px;
-  left: 0;
   width: 0;
   height: 3px;
-  background: #e50914;
   transition: width 0.3s ease;
   border-radius: 2px;
+  left: 0;
+  background: linear-gradient(90deg, #ff2e63, #e50914)
 }
 
 .navegador-enlace:hover {
@@ -55,3 +77,19 @@ body {
 .navegador-enlace:hover:after {
   width: 100%;
 }
+
+@media (min-width: 1024px) {
+  .navegador {
+    padding: 12px 24px;
+  }
+
+  .logo {
+    max-width: 140px;
+  }
+
+  .navegador-lista {
+    gap: 20px;
+  }
+}
+
+
